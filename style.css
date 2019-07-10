@@ -1,16 +1,28 @@
+/*fonts used
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+
 body{
-  background-color:  rgb(125, 198, 214);
+  background-color:  skyblue;
   margin:0; padding:0;
 
 
 }
 
-h1, h2, h3{
+h1{
   font-family: 'Lato', sans-serif;
 }
 
-h1, h2{
+h1{
   letter-spacing: 0.1em
+}
+
+h3{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2em
+
 }
 
 p{
@@ -19,18 +31,18 @@ p{
 
 @keyframes Thomas {
   from{left:-200%; color:white};
-  to{left:50%;color:rgb(125, 198, 214)}
+  to{left:50%;color:skyblue}
 
 }
 
 @keyframes Hughes {
-  from{left:-200%; color:rgb(125, 198, 214)}
+  from{left:-200%; color:skyblue}
   to{left:50%}
 }
 
 @keyframes slide-in-left {
   0%{
-    color:rgb(125, 198, 214);
+    color:skyblue;
     opacity: 1;
     left:-300%;
   }
@@ -45,7 +57,7 @@ p{
 .hero-banner{
   height: 100vh;
   position: relative;
-  background-color: skyblue;
+  background-color: #ff600f;
   border-bottom: 2px solid black;
 }
 
@@ -57,7 +69,7 @@ p{
 
 .hero-half2{
   height: 50%;
-  background-color: rgb(125, 198, 214);
+  background-color: skyblue;
 }
 
 .hero-text{
@@ -79,7 +91,7 @@ p{
 
 .Thomas
 {
-  color:rgb(125, 198, 214);
+  color:skyblue;
   animation-name: Thomas;
   animation-duration: 5s;
   animation-fill-mode: forwards;
@@ -110,12 +122,28 @@ p{
 
 
 
-.threepagescroll{;
-
-  height:300vh;
-position: relative;
+.WorkWrapper{;
+  height:321vh;
+  position: relative;
   top: 0px;
+}
 
+.AboutWrapper{
+  height: 150vh;
+  position: relative;
+  top:0px;
+  background-color: skyblue;
+}
+
+.aboutrighthalf{
+  height: 200vh
+}
+
+.ContactWrapper{
+  height: 120vh;
+  position: relative;
+  top:0px;
+  background-color:
 }
 
 .left-half{
@@ -124,7 +152,7 @@ position: relative;
   position: sticky;
   top:0;
   position: -webkit-sticky;
-  background-image: url(file:///C:/Users/Admin/Desktop/Portfolio/img/newportfoliopic.JPG);
+  background-color:#ff722b;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
@@ -138,54 +166,41 @@ position: relative;
   width:50%;
   top:0;
   position: sticky;
-  height:300vh;
+  height:321vh;
   margin:0px;
   padding:0px;
   border:0px
 }
 
+
+
 .title1{
-  position: -webkit-sticky;
+position: -webkit-sticky;
 position: -webkit-sticky;
 position: relative;
-  left: 0;
-  top: -5vh;
+left: 0;
 display: block;
 top:50%;
 padding:auto;
 margin: auto;
 margin-bottom: 40px;
 margin-top:40px
-
 }
 
 
 .workexp{
   left: 0;
-  top: -5vh;
-display: block;
-top:50%;
-padding:auto;
-margin: auto;
-margin-bottom: 40px;
-margin-top:40px;
-color:pink;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width:75%;
+  padding:
 
-}
-.workexp1 h2 {
-  color:white;
-  text-transform: uppercase;
-  padding-top: -800px
-}
-.workexp1 p{
-  color:white;
-  font-size: 1.2em;
-  line-height: 1.2em
 }
 
 
 .background{
-  height: 100vh;
+  height: 107vh;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
@@ -194,11 +209,11 @@ color:pink;
   display: flex;
   align-items: center;
   align-content: center;
+  padding-left:5em;
 
 }
 .background1{
-  height: 100vh;
-  background-image: url(file:///C:/Users/Admin/Desktop/Portfolio/img/surfer.JPG);
+  background-image: url(https://i.imgur.com/jTV0Ps4.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
@@ -210,8 +225,7 @@ color:pink;
 
 
 .background2{
-  height: 100vh;
-  background-image: url(file:///C:/Users/Admin/Desktop/Portfolio/img/lighthouse.JPG);
+  background-image: url(https://i.imgur.com/nP3kShE.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
@@ -220,8 +234,7 @@ color:pink;
 }
 
 .background3{
-  height: 100vh;
-  background-image: url(file:///C:/Users/Admin/Desktop/Portfolio/img/newportfoliopic.JPG);
+  background-image: url(https://i.imgur.com/fLlPJB6.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
@@ -244,7 +257,6 @@ color:pink;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 40px;
   display: flex;
   align-items: center;
   align-content: center;
@@ -256,7 +268,8 @@ color:pink;
   display: flex;
   align-items: center;
   align-content: center;
-  margin:auto
+  margin:auto;
+  border: 1px solid black
 }
 
 .aboutmerighthalf{
@@ -265,11 +278,4 @@ color:pink;
   display: flex;
   align-items: center;
   align-content: center;
-}
-
-
-
-h2, p{
-  margin-left: 5em;
-  margin-right: 5em;
 }
